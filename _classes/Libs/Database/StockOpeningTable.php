@@ -17,7 +17,8 @@ class StockOpeningTable
     {
         $statement = $this->db->query("SELECT stock.*, items.brand AS brand, items.model AS model, sub_categories.name AS SubName FROM stock
         INNER JOIN items ON stock.item_id = items.id
-        INNER JOIN sub_categories ON items.sub_category_id = sub_categories.id;");
+        INNER JOIN sub_categories ON items.sub_category_id = sub_categories.id
+        WHERE stock.type = 'SO';");
 
         return $statement->fetchAll();
     }
