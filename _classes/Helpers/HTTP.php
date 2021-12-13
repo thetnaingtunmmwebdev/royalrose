@@ -4,7 +4,7 @@ namespace Helpers;
 
 class HTTP
 {
-    static $base = "http://192.168.11.254/rr";
+    static $base = "http://192.168.1.8/royalrose";
 
     static function redirect($path, $query = "")
     {

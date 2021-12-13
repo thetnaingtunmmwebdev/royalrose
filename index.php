@@ -36,7 +36,7 @@
             <?php endif; ?>
 
             <form action="_actions/login.php" method="post">
-                <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+                <input type="text" name="email" class="form-control mb-2" placeholder="ID" required>
                 <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
                 <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
             </form>
